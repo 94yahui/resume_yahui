@@ -7,8 +7,8 @@ html {
 
 body {
     background-image: url(IMG_6680.jpg);
-/*     background-size: cover;
-    background-position: center; */
+    background-size: cover;
+/*     background-position: center;  */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
