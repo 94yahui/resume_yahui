@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(IMG_6680.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    color: white;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.photo {
+    width: 11rem;
+    border: solid 0.3rem white;
+    border-radius: 100%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.p {
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+p {
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+}
+
+.icon a {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 3vw;
+    background-color: rgba(104, 104, 104, 0.5);
+    color: white;
+    backdrop-filter: blur(50px);
+}
+
+main li {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+    color: rgb(205, 205, 205);
+}
+
+.experience div {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.artwork {
+    text-align: center;
+}
+
+.artwork img {
+    margin: 2rem;
+    width: 13rem;
+    border: solid 0.1rem #ffffff;
+    border-radius: 100%;
+}
+
+h3 {
+    border-left: solid 0.5rem #fca311;
+    padding: 0.5rem;
+}
+
+h4 {
+    border-left: double 0.2rem #fca311;
+    padding-left: 0.5rem;
+    color: #ffffff;
+    font-style: italic;
+}
+
+span {
+    color: #fca311;
+}
+
+.progress img {
+    width: 12vw;
+}
+
+.progress div {
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact a {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+
+    .p {
+        margin-top: 1rem;
+    }
+
+    .heading {
+        padding-top: 3rem;
+    }
+
+    main {
+        border-top: 0.5px solid white;
+        border-bottom: 0.5px solid white;
+    }
+
+    .progress {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .progress img {
+        width: 10rem;
+    }
+
+    nav li {
+        padding: 1rem;
+        margin: 0.5vh;
+        border-bottom: thin solid rgb(255, 255, 255);
+        font-size: 2vh;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    footer {
+        color: white;
+        padding: 3rem;
+        color: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    header {
+        grid-row: span 2;
+    }
+
+    .heading {
+        position: sticky;
+        top: 3vw;
+    }
+
+    .heading1 {
+        text-align: center;
+    }
+
+    nav {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    nav li {
+        display: block;
+        margin-top: 2vh;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    main {
+        border-left: 0.5px solid white;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .progress {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+        gap: 0.5rem;
+    }
+
+    .artwork img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .artwork img:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px white;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        color: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+        grid-column: 2/3;
+        border-left: 0.5px solid white;
+        border-top: 0.5px solid white;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
