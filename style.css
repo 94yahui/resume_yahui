@@ -134,6 +134,10 @@ span {
 
 @media screen and (max-width: 600px) {
 
+    body {
+    background-attachment: fixed;
+}
+
     nav {
         display: none;
     }
